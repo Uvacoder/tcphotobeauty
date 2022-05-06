@@ -16,11 +16,11 @@ function NavLink({ to, label, location }) {
   );
 }
 
-function NavBar({ children }) {
+function NavBar() {
   const location = useLocation();
 
   return (
-    <HStack as="nav" align="center" justify="space-between" padding="1rem">
+    <HStack as="nav" align="center" justify="center" padding="1rem">
       {links.map(({ path, label }) => (
         <NavLink key={path} to={path} label={label} location={location} />
       ))}
