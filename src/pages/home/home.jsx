@@ -14,7 +14,7 @@ function Home() {
     <Page>
       <Slideshow images={images} delay={7000} />
       <Spacer p={10} />
-      <Text fontSize={13} textTransform="uppercase">
+      <Text fontSize={11} textTransform="uppercase">
         Recent Work
       </Text>
       <Spacer p={2} />

@@ -34,7 +34,7 @@ function NavLink({ to, label, location }) {
     <Link
       textTransform="uppercase"
       fontWeight={400}
-      fontSize={13}
+      fontSize={11}
       opacity={isActive ? 1 : 0.3}
     >
       <RouterLink to={to}>{label}</RouterLink>
