@@ -1,7 +1,7 @@
 import { VStack } from "@chakra-ui/react";
 
 const Wrapper = ({ children }) => (
-  <VStack as="main" padding="2rem">
+  <VStack as="main" padding="2rem" overflow="hidden">
     {children}
   </VStack>
 );

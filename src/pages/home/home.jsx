@@ -18,7 +18,11 @@ function Home() {
         Recent Work
       </Text>
       <Spacer p={2} />
-      <SimpleGrid columns={[1, 3, 3]} spacing={10} w="4xl">
+      <SimpleGrid
+        columns={[1, 3, 3, 3, 3]}
+        spacing={2}
+        w={["sm", "xl", "2xl", "3xl", "4xl"]}
+      >
         <PhotoTile src={images[0]} />
         <PhotoTile src={images[1]} />
         <PhotoTile src={images[2]} />
