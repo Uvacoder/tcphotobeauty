@@ -3,6 +3,38 @@
     "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     "https://images.unsplash.com/photo-1544592732-83bbbfc46783?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     "https://images.unsplash.com/photo-1545450109-f8f9f9f9f9f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1481653125770-b78c206c59d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+    "https://images.unsplash.com/photo-1481653125770-b78c206c59d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    "https://images.unsplash.com/photo-1544592732-83bbbfc46783?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+  ],
+  "pricing": [
+    {
+      "name": "Package 1",
+      "price": "1000",
+      "services": ["4 hour wedding day coverage", "Bridals", "Engagements"]
+    },
+    {
+      "name": "Package 2",
+      "price": "1500",
+      "services": ["8 hour wedding day coverage", "Bridals", "Engagements"]
+    }
+  ],
+  "carte": [
+    {
+      "name": "Bridals",
+      "price": "1000"
+    },
+    {
+      "name": "Engagements",
+      "price": "1000"
+    },
+    {
+      "name": "Wedding Day Coverage - 4 hours",
+      "price": "1000"
+    },
+    {
+      "name": "Wedding Day Coverage - 8 hours",
+      "price": "1000"
+    }
   ]
 }

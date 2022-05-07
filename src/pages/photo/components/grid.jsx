@@ -4,7 +4,7 @@ function Grid({ children }) {
   return (
     <SimpleGrid
       columns={[1, 1, 2, 3, 4]}
-      spacing={5}
+      spacing={2}
       w={["sm", "xl", "2xl", "3xl", "5xl"]}
     >
       {children}
