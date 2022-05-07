@@ -1,5 +1,6 @@
 import { Page } from "../../components";
 import { Slideshow } from "./components/slideshow";
+import { useSlideshow } from "./hooks/useSlidshow";
 
 const images = [
   "https://i.ytimg.com/vi/Ahzrv1TQGHY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC8Ci_NTNGcK00CZ1dxAbJoO_ieCw",
@@ -15,7 +16,7 @@ function Home() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
         doloremque.
       </p>
-      <Slideshow images={images} delay={3000} />
+      <Slideshow images={images} delay={5000} />
     </Page>
   );
 }
