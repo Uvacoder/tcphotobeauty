@@ -11,20 +11,11 @@ function PhotoTile({ src, onClick, title }) {
         cursor="pointer"
         w="100%"
         h="100%"
+        transition={"all 0.1s ease-in-out"}
+        _hover={{ opacity: 0.8 }}
       >
-        <Text
-          color="white"
-          _before={{
-            content: `""`,
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            background: "rgba(0,0,0,0.5)",
-            opacity: 0.7,
-          }}
-        >
+        <Box bg="black" w="100%" h="100%" position="absolute" opacity={0.4} />
+        <Text position="relative" zIndex={10} color="white">
           {title || "Hello world"}
         </Text>
       </Box>
