@@ -8,10 +8,25 @@ function PhotoTile({ src, onClick, title }) {
         backgroundSize="cover"
         backgroundImage={`url(${src})`}
         onClick={onClick}
+        cursor="pointer"
         w="100%"
         h="100%"
       >
-        <Text>{title}</Text>
+        <Text
+          color="white"
+          _before={{
+            content: `""`,
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            background: "rgba(0,0,0,0.5)",
+            opacity: 0.7,
+          }}
+        >
+          {title || "Hello world"}
+        </Text>
       </Box>
     </AspectRatio>
   );

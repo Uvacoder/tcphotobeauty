@@ -1,6 +1,5 @@
 import { Page, PhotoTile } from "../../components";
 import { Slideshow } from "./components/slideshow";
-import { useSlideshow } from "./hooks/useSlidshow";
 import { SimpleGrid, Spacer, Text } from "@chakra-ui/react";
 
 const images = [
@@ -13,8 +12,11 @@ function Home() {
   return (
     <Page>
       <Slideshow images={images} delay={7000} />
-      <Spacer p={10}/>
-      <Text>Recent Work</Text>
+      <Spacer p={10} />
+      <Text fontSize={13} textTransform="uppercase">
+        Recent Work
+      </Text>
+      <Spacer p={2} />
       <SimpleGrid columns={[1, 3, 3]} spacing={10} w="4xl">
         <PhotoTile src={images[0]} />
         <PhotoTile src={images[1]} />

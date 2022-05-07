@@ -1,5 +1,4 @@
-import { Image, Box, HStack, VStack } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
+import { Box } from "@chakra-ui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSlideshow } from "../hooks/useSlidshow";
 
@@ -16,6 +15,8 @@ function Slideshow({ images, delay }) {
             width: "100%",
             height: "100%",
             position: "absolute",
+            objectFit: "cover",
+            objectPosition: "center",
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -25,34 +26,6 @@ function Slideshow({ images, delay }) {
       </AnimatePresence>
     </Box>
   );
-
-  // return (
-  //   <Box h="300px">
-  //     {images.map((slide, i) => (
-  //       <AnimatePresence>
-  //         <HStack w="100%" justify="center" align="center">
-  //           {i === index && (
-  //             <motion.div
-  //               layout
-  //               key={index}
-  //               initial={{ opacity: 0 }}
-  //               animate={{ opacity: 1 }}
-  //               exit={{ opacity: 0 }}
-  //               transition={{
-  //                 duration: 3,
-  //                 ease: "easeInOut",
-  //               }}
-  //             >
-  //               <motion.div layoutId={index.toString()}>
-  //                 <Image src={slide} />
-  //               </motion.div>
-  //             </motion.div>
-  //           )}
-  //         </HStack>
-  //       </AnimatePresence>
-  //     ))}
-  //   </Box>
-  // );
 }
 
 export { Slideshow };
