@@ -1,10 +1,16 @@
-import { useDocumentTitle } from "../../hooks/useDocumentTitle";
+import { Page, PhotoTile } from "../../components";
+import { Grid } from "./components/grid";
+import { photos } from "./data.json";
 
 function Photo() {
   return (
-    <div>
-      <h1>Photo</h1>
-    </div>
+    <Page>
+      <Grid>
+        {photos.map((photo, i) => (
+          <PhotoTile key={i} src={photo} />
+        ))}
+      </Grid>
+    </Page>
   );
 }
 
