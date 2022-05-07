@@ -10,8 +10,6 @@ const images = [
 ];
 
 function Home() {
-  useDocumentTitle("T&C | Home");
-
   return (
     <Page>
       <Slideshow images={images} delay={7000} />
