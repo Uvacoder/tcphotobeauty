@@ -1,11 +1,6 @@
 import { Heading, HStack, Link, VStack, Text } from "@chakra-ui/react";
 import { useLocation, Link as RouterLink } from "react-router-dom";
-
-const links = [
-  { path: "/", label: "Home" },
-  { path: "/photo", label: "Photo" },
-  { path: "/video", label: "Video" },
-];
+import { routes } from "../../config";
 
 function NavBar() {
   const location = useLocation();
@@ -20,8 +15,8 @@ function NavBar() {
         padding="1rem"
         spacing={5}
       >
-        {links.map(({ path, label }) => (
-          <NavLink key={path} to={path} label={label} location={location} />
+        {routes.map(({ path, title }) => (
+          <NavLink key={path} to={path} label={title} location={location} />
         ))}
       </HStack>
     </VStack>
