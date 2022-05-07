@@ -11,12 +11,7 @@ const images = [
 function Home() {
   return (
     <Page>
-      <h1>Home</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-        doloremque.
-      </p>
-      <Slideshow images={images} delay={5000} />
+      <Slideshow images={images} delay={7000} />
     </Page>
   );
 }

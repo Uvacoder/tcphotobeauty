@@ -7,14 +7,14 @@ function Slideshow({ images, delay }) {
   const image = useSlideshow(images, delay);
 
   return (
-    <Box w="20rem">
+    <Box position="relative" w={[800]} h={[400]}>
       <AnimatePresence initial={false}>
         <motion.img
           key={image}
           src={image}
           style={{
-            width: "20rem",
-            height: "10rem",
+            width: "100%",
+            height: "100%",
             position: "absolute",
           }}
           initial={{ opacity: 0 }}
