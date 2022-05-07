@@ -4,6 +4,7 @@ import { useLocation, Link as RouterLink } from "react-router-dom";
 const links = [
   { path: "/", label: "Home" },
   { path: "/photo", label: "Photo" },
+  { path: "/video", label: "Video" },
 ];
 
 function NavBar() {
