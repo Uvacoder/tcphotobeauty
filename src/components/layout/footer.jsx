@@ -8,7 +8,7 @@ function Footer() {
       align="center"
       justify="center"
       spacing={2}
-      py={20}
+      py={10}
     >
       <Text>HUSBAND + WIFE</Text>
       <Text>PHOTOGRAPHY & VIDEOGRAPHY</Text>

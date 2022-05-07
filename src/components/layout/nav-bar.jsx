@@ -10,7 +10,7 @@ function NavBar() {
   useDocumentTitle(`T&C | ${title}`);
 
   return (
-    <VStack pt={10}>
+    <VStack pt={10} pb={3}>
       <Logo />
       <HStack
         as="nav"
@@ -34,7 +34,7 @@ function NavLink({ to, label, location }) {
     <Link
       textTransform="uppercase"
       fontWeight={400}
-      fontSize={11}
+      fontSize={12}
       opacity={isActive ? 1 : 0.3}
     >
       <RouterLink to={to}>{label}</RouterLink>

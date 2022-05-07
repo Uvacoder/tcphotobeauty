@@ -1,7 +1,6 @@
 import { Page, PhotoTile } from "../../components";
 import { Slideshow } from "./components/slideshow";
-import { SimpleGrid, Spacer, Text } from "@chakra-ui/react";
-import { useDocumentTitle } from "../../hooks/useDocumentTitle";
+import { SimpleGrid, Spacer, Text, Divider } from "@chakra-ui/react";
 
 const images = [
   "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
@@ -13,8 +12,10 @@ function Home() {
   return (
     <Page>
       <Slideshow images={images} delay={7000} />
-      <Spacer p={10} />
-      <Text fontSize={11} textTransform="uppercase">
+      <Spacer p={5} />
+      <Divider w={["md"]} />
+      <Spacer p={5} />
+      <Text fontSize={12} textTransform="uppercase">
         Recent Work
       </Text>
       <Spacer p={2} />
@@ -27,6 +28,8 @@ function Home() {
         <PhotoTile src={images[1]} />
         <PhotoTile src={images[2]} />
       </SimpleGrid>
+      <Spacer p={5} />
+      <Divider w={["md"]} />
     </Page>
   );
 }
