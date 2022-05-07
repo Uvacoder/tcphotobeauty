@@ -1,6 +1,7 @@
 import { Page, PhotoTile } from "../../components";
 import { Slideshow } from "./components/slideshow";
 import { SimpleGrid, Spacer, Text } from "@chakra-ui/react";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 
 const images = [
   "https://i.ytimg.com/vi/Ahzrv1TQGHY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC8Ci_NTNGcK00CZ1dxAbJoO_ieCw",
@@ -9,6 +10,8 @@ const images = [
 ];
 
 function Home() {
+  useDocumentTitle("T&C | Home");
+
   return (
     <Page>
       <Slideshow images={images} delay={7000} />
