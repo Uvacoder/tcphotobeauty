@@ -11,7 +11,7 @@ function PhotoTile({ src, onClick, title }) {
         cursor="pointer"
         w="100%"
         h="100%"
-        transition={"all 0.1s ease-in-out"}
+        // transition={"all 0.1s ease-in-out"}
         _hover={{ opacity: 0.8 }}
       >
         <Box bg="black" w="100%" h="100%" position="absolute" opacity={0.4} />

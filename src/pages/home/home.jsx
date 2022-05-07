@@ -4,9 +4,9 @@ import { SimpleGrid, Spacer, Text } from "@chakra-ui/react";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 
 const images = [
-  "https://i.ytimg.com/vi/Ahzrv1TQGHY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC8Ci_NTNGcK00CZ1dxAbJoO_ieCw",
-  "https://i.ytimg.com/vi/_jqWwQNWsg4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAK6jAs9evMV67q2uTSsbkTIuZOIg",
-  "https://i.ytimg.com/vi/kR8DS99JwsQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMbiL3n378HbDiPTQaDC1cJrk7OA",
+  "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1494955870715-979ca4f13bf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
 ];
 
 function Home() {
