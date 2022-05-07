@@ -21,7 +21,7 @@ function Home() {
       <SimpleGrid
         columns={[1, 3, 3, 3, 3]}
         spacing={2}
-        w={["sm", "xl", "2xl", "3xl", "4xl"]}
+        w={["sm", "xl", "2xl", "3xl", "5xl"]}
       >
         <PhotoTile src={images[0]} />
         <PhotoTile src={images[1]} />
