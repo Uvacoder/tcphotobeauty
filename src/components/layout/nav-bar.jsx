@@ -1,7 +1,16 @@
-import { Heading, HStack, Link, VStack, Text } from "@chakra-ui/react";
+import {
+  Heading,
+  HStack,
+  Link,
+  VStack,
+  Text,
+  Spacer,
+  IconButton,
+} from "@chakra-ui/react";
 import { useLocation, Link as RouterLink } from "react-router-dom";
 import { routes } from "../../config";
 import { useDocumentTitle } from "../../hooks";
+import { FaHamburger } from "react-icons/fa";
 
 function NavBar() {
   const location = useLocation();
@@ -45,9 +54,21 @@ function NavLink({ to, label, location }) {
 function Logo() {
   return (
     <HStack spacing={1}>
-      <Heading>T</Heading>
+      <Heading fontSize={45}>T</Heading>
       <Text>&</Text>
-      <Heading>C</Heading>
+      <Heading fontSize={45}>C</Heading>
+    </HStack>
+  );
+}
+
+function MobileNavBar() {
+  const location = useLocation();
+
+  return (
+    <HStack>
+      <Logo />
+      <Spacer />
+      <IconButton icon={<FaHamburger />} />
     </HStack>
   );
 }
