@@ -19,7 +19,7 @@ function Photo() {
         Pricing
       </Text>
       <Spacer p={2} />
-      <SimpleGrid columns={[1, 2]} w={["5xl"]} spacing={2}>
+      <SimpleGrid columns={[1, 2]} w={["sm", "xl", "2xl", "3xl", "5xl"]} spacing={2}>
         {pricing.map((plan, i) => (
           <Pricing
             key={i}

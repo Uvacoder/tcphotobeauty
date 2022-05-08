@@ -21,20 +21,21 @@
   ],
   "carte": [
     {
+      "name": "Wedding Day Coverage | 4 hours",
+      "price": "1000"
+    },
+    {
+      "name": "Wedding Day Coverage | 8 hours",
+      "price": "1000"
+    },
+    {
       "name": "Bridals",
       "price": "1000"
     },
     {
       "name": "Engagements",
       "price": "1000"
-    },
-    {
-      "name": "Wedding Day Coverage - 4 hours",
-      "price": "1000"
-    },
-    {
-      "name": "Wedding Day Coverage - 8 hours",
-      "price": "1000"
     }
+
   ]
 }

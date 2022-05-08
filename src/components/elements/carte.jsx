@@ -6,7 +6,7 @@ function Carte({ services }) {
       <Heading
         as="h3"
         fontSize={24}
-        w={["5xl"]}
+        w={["sm", "xl", "2xl", "3xl", "5xl"]}
         border="1px solid black"
         py={4}
         textAlign="center"
