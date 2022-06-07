@@ -6,7 +6,7 @@ function Slideshow({ images, delay }) {
   const image = useSlideshow(images, delay);
 
   return (
-    <Box position="relative" w={["md", "xl", "2xl", "3xl", "5xl"]} h={[500]}>
+    <Box position="relative" w={["md", "xl", "2xl", "3xl", "6xl"]} h={[500]}>
       <AnimatePresence initial={false}>
         <motion.img
           key={image}

@@ -53,10 +53,15 @@ function NavLink({ to, label, location }) {
 
 function Logo() {
   return (
-    <HStack spacing={1}>
-      <Heading fontSize={45}>T</Heading>
-      <Text>&</Text>
-      <Heading fontSize={45}>C</Heading>
+    <HStack spacing={2}>
+      <Heading fontWeight="medium" fontSize={45}>
+        T
+      </Heading>
+      {/* <Text fontSize={28}>·</Text> */}
+      <Text fontWeight="light">+</Text>
+      <Heading fontWeight="medium" fontSize={45}>
+        C
+      </Heading>
     </HStack>
   );
 }
